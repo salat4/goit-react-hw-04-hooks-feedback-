@@ -43,6 +43,7 @@ export class App extends Component {
           <Notification message="There is no feedback" />
         ) : (
           <Statistics
+            options={Object.entries(this.state)}
             good={this.state.good}
             neutral={this.state.neutral}
             bad={this.state.bad}
