@@ -1,10 +1,9 @@
-const FeedbackOptions = ({ options, onLeaveFeedback }) => (
+const FeedbackOptions = ({countGood,countNeutral,countBad }) => (
   <div>
-    {options.map(option => (
-      <button type="button" onClick={onLeaveFeedback} value={option}>
-        {option}
-      </button>
-    ))}
+    <button onClick={countGood}>good</button>
+    <button onClick={countNeutral}>neutral</button>
+    <button onClick={countBad}>bad</button>
+
   </div>
 );
 export default FeedbackOptions;
