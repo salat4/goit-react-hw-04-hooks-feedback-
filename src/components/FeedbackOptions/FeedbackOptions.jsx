@@ -5,5 +5,8 @@ const FeedbackOptions = ({countGood,countNeutral,countBad }) => (
     <button onClick={countBad}>bad</button>
 
   </div>
+
+
+  
 );
 export default FeedbackOptions;
